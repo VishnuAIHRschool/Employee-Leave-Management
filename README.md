@@ -2,58 +2,15 @@
 
 ## 🚀 Project Overview
 
-The Employee Leave Management Portal is a modern HR application built using FastAPI, Streamlit, and SQLite. The system enables employees to apply for leave, managers to approve or reject requests, and HR teams to monitor workforce leave analytics through interactive dashboards.
+Employee Leave Management Portal is a modern HR application developed using **FastAPI, Streamlit, SQLite, SQLAlchemy, and Plotly**. The portal automates the employee leave management process by providing role-based access for Employees, Managers, and Administrators.
 
-This project was developed as a Buildathon submission to demonstrate full-stack application development using Python technologies.
+The application enables employees to submit leave requests, managers to approve or reject requests, and administrators to monitor workforce data through interactive dashboards and analytics.
 
 ---
 
-## 🎯 Key Features
+## 🎯 Project Objective
 
-### 👨‍💼 Employee Dashboard
-
-- Total Employee Count
-- Gender Distribution Analysis
-- Department-wise Employee Analysis
-- Designation-wise Employee Analysis
-- Interactive Employee Analytics
-
-### 📝 Leave Management
-
-- Submit Leave Requests
-- Automatic Leave Day Calculation
-- Leave Validation
-- Employee Selection from Directory
-- Multiple Leave Types Support
-
-### ✅ Manager Approval Dashboard
-
-- View Pending Requests
-- Approve Leave Requests
-- Reject Leave Requests
-- Real-Time Status Updates
-
-### 👥 Employee Directory
-
-- Employee Search
-- Employee Cards View
-- Employee Master Data
-- Department Information
-- Reporting Manager Information
-
-### 📊 Leave Statistics Dashboard
-
-- Leave Status Distribution
-- Leave Type Analysis
-- Department-wise Leave Analysis
-- Interactive Charts & Visualizations
-
-### 🗄 Database Management
-
-- SQLite Database Integration
-- Employee Records Storage
-- Leave Request Storage
-- Status Tracking
+The primary objective of this project is to digitize and automate the employee leave management process while providing a user-friendly interface and role-based access control.
 
 ---
 
@@ -73,19 +30,94 @@ SQLite Database
 
 ## 🛠 Technology Stack
 
-| Component | Technology |
-|------------|------------|
-| Frontend | Streamlit |
-| Backend | FastAPI |
-| Database | SQLite |
-| ORM | SQLAlchemy |
-| Visualization | Plotly |
-| Language | Python |
-| API Testing | Swagger UI |
+| Component          | Technology |
+| ------------------ | ---------- |
+| Frontend           | Streamlit  |
+| Backend            | FastAPI    |
+| Database           | SQLite     |
+| ORM                | SQLAlchemy |
+| Charts & Analytics | Plotly     |
+| Language           | Python     |
+| API Documentation  | Swagger UI |
 
 ---
 
-## 📁 Project Structure
+## 🔐 Role-Based Login System
+
+### Employee
+
+* Login using Employee ID and Password
+* Apply Leave
+* View Own Leave History
+
+### Manager
+
+* View Employee Dashboard
+* Approve / Reject Leave Requests
+* View Leave Statistics
+* View Leave History
+
+### Administrator
+
+* Full Portal Access
+* Employee Dashboard
+* Employee Directory
+* Leave Management
+* Leave Statistics
+* Manager Approval Dashboard
+
+---
+
+## 📋 Features Implemented
+
+### 👨‍💼 Employee Dashboard
+
+* Total Employee Count
+* Gender Distribution Analysis
+* Department-wise Employee Analytics
+* Designation-wise Employee Analytics
+* Interactive Visualizations
+
+### 📝 Leave Application Module
+
+* Apply Leave
+* Leave Type Selection
+* Leave Duration Calculation
+* Leave Validation
+* Real-Time Submission
+
+### ✅ Manager Approval Dashboard
+
+* Pending Leave Requests
+* Approve Requests
+* Reject Requests
+* Request Tracking
+
+### 👥 Employee Directory
+
+* Employee Search
+* Employee Profile Cards
+* Department Information
+* Reporting Manager Information
+* Employee Master Data
+
+### 📊 Leave Statistics Dashboard
+
+* Leave Status Distribution
+* Leave Type Analysis
+* Department-wise Leave Analytics
+* Interactive Charts
+
+### 🗄 Database Management
+
+* Employee Records Storage
+* Leave Records Storage
+* Status Tracking
+* Historical Data Management
+
+---
+
+## 📂 Project Structure
 
 ```text
 EmployeeLeaveManagement
@@ -113,25 +145,25 @@ EmployeeLeaveManagement
 
 ## ⚙ Installation Guide
 
-### Step 1 - Clone Repository
+### Step 1: Clone Repository
 
 ```bash
 git clone https://github.com/VishnuAIHRschool/Employee-Leave-Management.git
 ```
 
-### Step 2 - Navigate to Project
+### Step 2: Navigate to Project
 
 ```bash
 cd Employee-Leave-Management
 ```
 
-### Step 3 - Create Virtual Environment
+### Step 3: Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### Step 4 - Activate Virtual Environment
+### Step 4: Activate Virtual Environment
 
 Windows:
 
@@ -139,7 +171,7 @@ Windows:
 venv\Scripts\activate
 ```
 
-### Step 5 - Install Dependencies
+### Step 5: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -147,7 +179,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶ Running the Backend
+## ▶ Run Backend
 
 Navigate to backend folder:
 
@@ -175,7 +207,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## ▶ Running the Frontend
+## ▶ Run Frontend
 
 Navigate to frontend folder:
 
@@ -189,7 +221,7 @@ Run Streamlit:
 streamlit run app.py
 ```
 
-Application URL:
+Frontend URL:
 
 ```text
 http://localhost:8501
@@ -197,27 +229,31 @@ http://localhost:8501
 
 ---
 
-## 📷 Application Screenshots
+## 📸 Application Screenshots
+
+### Login Screen
+
+Screenshot available in screenshots folder.
 
 ### Employee Dashboard
 
-(Add Screenshot Here)
+Screenshot available in screenshots folder.
 
-### Apply Leave
+### Apply Leave Module
 
-(Add Screenshot Here)
+Screenshot available in screenshots folder.
 
 ### Manager Approval Dashboard
 
-(Add Screenshot Here)
+Screenshot available in screenshots folder.
 
 ### Employee Directory
 
-(Add Screenshot Here)
+Screenshot available in screenshots folder.
 
 ### Leave Statistics Dashboard
 
-(Add Screenshot Here)
+Screenshot available in screenshots folder.
 
 ---
 
@@ -225,33 +261,34 @@ http://localhost:8501
 
 ### Employee
 
-1. Select Employee
+1. Login to Portal
 2. Apply Leave
 3. Submit Request
+4. Track Request Status
 
 ### Manager
 
-1. Review Request
-2. Approve / Reject Request
+1. Login to Portal
+2. Review Leave Requests
+3. Approve or Reject Requests
 
-### System
+### Administrator
 
-1. Store Request in Database
-2. Update Status
-3. Display Analytics
+1. Login to Portal
+2. Monitor Employee Analytics
+3. View Leave Statistics
+4. Manage Employee Information
 
 ---
 
-## 📈 Future Enhancements
+## 📊 Key Outcomes
 
-- Authentication & Login
-- Role-Based Access Control
-- Email Notifications
-- Leave Balance Tracking
-- Attendance Management
-- Payroll Integration
-- Work From Home Module
-- Cloud Deployment
+* Automated Leave Management Process
+* Improved Approval Efficiency
+* Centralized Employee Information
+* Interactive HR Analytics
+* Real-Time Leave Tracking
+* Role-Based Security
 
 ---
 
@@ -263,6 +300,8 @@ http://localhost:8501
 
 ✅ SQLite Database
 
+✅ Role-Based Login
+
 ✅ Employee Dashboard
 
 ✅ Apply Leave Module
@@ -273,13 +312,19 @@ http://localhost:8501
 
 ✅ Leave Statistics Dashboard
 
-✅ Leave History
+✅ Leave History Tracking
 
-✅ Employee Master Data
+✅ API Integration
 
 ✅ Interactive Charts
 
-✅ Responsive UI
+✅ GitHub Repository
+
+---
+
+## 🔗 GitHub Repository
+
+https://github.com/VishnuAIHRschool/Employee-Leave-Management
 
 ---
 
@@ -289,12 +334,8 @@ http://localhost:8501
 
 Buildathon Project Submission
 
-GitHub Repository:
-
-https://github.com/VishnuAIHRschool/Employee-Leave-Management
-
 ---
 
 ## 📌 Conclusion
 
-The Employee Leave Management Portal streamlines employee leave processing, manager approvals, and workforce analytics through an intuitive web-based interface built using modern Python technologies.
+The Employee Leave Management Portal successfully demonstrates the implementation of a complete HR leave management solution using modern Python technologies. The system automates leave processing, approval workflows, employee analytics, and reporting through an intuitive web-based interface.

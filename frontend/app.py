@@ -19,84 +19,26 @@ st.markdown("""
 }
 [data-testid="stSidebar"] * { color:white !important; }
 
-.sidebar-title {
-    font-size:26px;
-    font-weight:900;
-    line-height:1.35;
-    margin-bottom:8px;
-}
-.sidebar-subtitle {
-    font-size:13px;
-    color:#cbd5e1 !important;
-    margin-bottom:26px;
-}
-[data-testid="stSidebar"] label {
-    font-size:15px !important;
-    font-weight:900 !important;
-}
-[data-testid="stSidebar"] [role="radiogroup"] label {
-    padding:9px 8px !important;
-    border-radius:12px;
-    font-size:15px !important;
-    font-weight:750 !important;
-}
-[data-testid="stSidebar"] [role="radiogroup"] label:hover {
-    background:rgba(255,255,255,0.08);
-}
+.sidebar-title { font-size:26px; font-weight:900; line-height:1.35; margin-bottom:8px; }
+.sidebar-subtitle { font-size:13px; color:#cbd5e1 !important; margin-bottom:26px; }
 
 .topbar, .card, .metric-card, .approval-card {
     background:white;
     border:1px solid #e5e7eb;
     box-shadow:0 8px 24px rgba(15,23,42,.07);
 }
-.topbar {
-    padding:20px 26px;
-    border-radius:18px;
-    margin-bottom:22px;
-}
-.page-title {
-    font-size:30px;
-    font-weight:900;
-    color:#0f172a;
-}
-.page-subtitle {
-    color:#64748b;
-    font-size:14px;
-    font-weight:600;
-}
+.topbar { padding:20px 26px; border-radius:18px; margin-bottom:22px; }
+.page-title { font-size:30px; font-weight:900; color:#0f172a; }
+.page-subtitle { color:#64748b; font-size:14px; font-weight:600; }
 
-.metric-card {
-    padding:22px;
-    border-radius:20px;
-    min-height:125px;
-}
-.metric-title {
-    color:#64748b;
-    font-size:14px;
-    font-weight:800;
-}
-.metric-value {
-    color:#0f172a;
-    font-size:34px;
-    font-weight:900;
-}
-.metric-note {
-    color:#64748b;
-    font-size:13px;
-    font-weight:600;
-}
+.metric-card { padding:22px; border-radius:20px; min-height:125px; }
+.metric-title { color:#64748b; font-size:14px; font-weight:800; }
+.metric-value { color:#0f172a; font-size:34px; font-weight:900; }
+.metric-note { color:#64748b; font-size:13px; font-weight:600; }
 
-.card {
-    padding:24px;
-    border-radius:22px;
-    margin-bottom:22px;
-}
-.card-title {
-    color:#0f172a;
-    font-size:21px;
-    font-weight:900;
-    margin-bottom:18px;
-}
+.card { padding:24px; border-radius:22px; margin-bottom:22px; }
+.card-title { color:#0f172a; font-size:21px; font-weight:900; margin-bottom:18px; }
+
 
 .approval-card {
     padding:24px;
@@ -104,45 +46,13 @@ st.markdown("""
     border-left:7px solid #2563eb;
     margin-bottom:18px;
 }
-.approval-title {
-    color:#0f172a;
-    font-size:22px;
-    font-weight:900;
-    margin-bottom:16px;
-}
-.info-row {
-    color:#0f172a;
-    font-size:15px;
-    margin-bottom:10px;
-}
-.info-label {
-    color:#475569;
-    font-weight:900;
-    display:inline-block;
-    min-width:160px;
-}
+.approval-title { color:#0f172a; font-size:22px; font-weight:900; margin-bottom:16px; }
+.info-row { color:#0f172a; font-size:15px; margin-bottom:10px; }
+.info-label { color:#475569; font-weight:900; display:inline-block; min-width:160px; }
 
-.badge-pending {
-    background:#fef3c7;
-    color:#92400e;
-    padding:7px 14px;
-    border-radius:20px;
-    font-weight:900;
-}
-.badge-approved {
-    background:#dcfce7;
-    color:#166534;
-    padding:7px 14px;
-    border-radius:20px;
-    font-weight:900;
-}
-.badge-rejected {
-    background:#fee2e2;
-    color:#991b1b;
-    padding:7px 14px;
-    border-radius:20px;
-    font-weight:900;
-}
+.badge-pending { background:#fef3c7; color:#92400e; padding:7px 14px; border-radius:20px; font-weight:900; }
+.badge-approved { background:#dcfce7; color:#166534; padding:7px 14px; border-radius:20px; font-weight:900; }
+.badge-rejected { background:#fee2e2; color:#991b1b; padding:7px 14px; border-radius:20px; font-weight:900; }
 
 .employee-card {
     background:white;
@@ -164,17 +74,8 @@ st.markdown("""
     font-weight:900;
     margin-bottom:12px;
 }
-.employee-name {
-    color:#0f172a;
-    font-size:18px;
-    font-weight:900;
-}
-.employee-meta {
-    color:#64748b;
-    font-size:13px;
-    margin-bottom:7px;
-    font-weight:600;
-}
+.employee-name { color:#0f172a; font-size:18px; font-weight:900; }
+.employee-meta { color:#64748b; font-size:13px; margin-bottom:7px; font-weight:600; }
 .employee-tag {
     display:inline-block;
     background:#eef2ff;
@@ -185,10 +86,7 @@ st.markdown("""
     font-weight:900;
 }
 
-label {
-    color:#0f172a !important;
-    font-weight:800 !important;
-}
+label { color:#0f172a !important; font-weight:800 !important; }
 .stButton > button {
     background:linear-gradient(135deg,#2563eb,#7c3aed);
     color:white;
@@ -197,13 +95,12 @@ label {
     font-weight:900;
     padding:.6rem 1.2rem;
 }
-.stButton > button:hover {
-    color:white;
-    border:none;
-}
+.stButton > button:hover { color:white; border:none; }
 </style>
 """, unsafe_allow_html=True)
 
+
+# -------------------- API FUNCTIONS --------------------
 
 def get_leave_data():
     try:
@@ -303,7 +200,6 @@ def clean_pie(fig, height=430):
     fig.update_traces(
         textposition="outside",
         textinfo="label+percent+value",
-        pull=[0.02] * len(fig.data[0].labels) if fig.data else None,
         marker=dict(line=dict(color="white", width=2))
     )
 
@@ -331,29 +227,107 @@ def clean_pie(fig, height=430):
     return fig
 
 
-st.sidebar.markdown('<div class="sidebar-title">📅 Leave Management Portal</div>', unsafe_allow_html=True)
-st.sidebar.markdown('<div class="sidebar-subtitle">Employee Leave Automation</div>', unsafe_allow_html=True)
+# -------------------- LOGIN SYSTEM --------------------
 
-menu = st.sidebar.radio(
-    "MAIN MENU",
-    [
-        "🏠 Employee Dashboard",
-        "📝 Apply Leave",
-        "✅ Manager Approval Dashboard",
-        "👥 Employee Directory",
-        "📊 Leave Statistics",
-        "📄 Leave History"
-    ]
-)
+USERS = {
+    "EMP001": {"password": "emp123", "role": "Employee", "name": "Employee User"},
+    "MGR001": {"password": "manager123", "role": "Manager", "name": "Manager User"},
+    "ADMIN001": {"password": "admin123", "role": "Admin", "name": "Admin User"},
+}
 
-page_title = menu.split(" ", 1)[1]
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+    st.session_state.user_id = ""
+    st.session_state.role = ""
+    st.session_state.name = ""
 
-st.markdown(f"""
-<div class="topbar">
-    <div class="page-title">{page_title}</div>
-    <div class="page-subtitle">FastAPI + Streamlit + SQLite Leave Management System</div>
-</div>
-""", unsafe_allow_html=True)
+if not st.session_state.logged_in:
+
+    left, center, right = st.columns([2, 1.2, 2])
+
+    with center:
+
+        st.markdown("""
+        <div style="
+            background:white;
+            padding:35px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            margin-top:80px;
+        ">
+        <h1 style="text-align:center;color:#0f172a;">
+            Leave Management Portal
+        </h1>
+
+        <p style="
+            text-align:center;
+            color:#64748b;
+            margin-bottom:30px;
+        ">
+            Employee • Manager • Administrator Access
+        </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        login_id = st.text_input(
+            "Employee ID",
+            placeholder="Enter Employee ID"
+        )
+
+        password = st.text_input(
+            "Password",
+            type="password",
+            placeholder="Enter Password"
+        )
+
+        login_btn = st.button(
+            "Login",
+            use_container_width=True
+        )
+
+        if login_btn:
+            if login_id in USERS and USERS[login_id]["password"] == password:
+                st.session_state.logged_in = True
+                st.session_state.user_id = login_id
+                st.session_state.role = USERS[login_id]["role"]
+                st.session_state.name = USERS[login_id]["name"]
+                st.rerun()
+            else:
+                st.error("Invalid Employee ID or Password")
+
+    st.stop()  
+    st.markdown("<h1 style='text-align:center;color:#0f172a;'>📅 Leave Management Portal</h1>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align:center;color:#64748b;'>Role-Based Login</h4>", unsafe_allow_html=True)
+
+    col1, col2, col3 = st.columns([1, 1.1, 1])
+
+    with col2:
+        
+
+        login_id = st.text_input("Employee / Manager / Admin ID")
+        password = st.text_input("Password", type="password")
+
+      
+
+        login_btn = st.button("Login")
+
+        if login_btn:
+            if login_id in USERS and USERS[login_id]["password"] == password:
+                st.session_state.logged_in = True
+                st.session_state.user_id = login_id
+                st.session_state.role = USERS[login_id]["role"]
+                st.session_state.name = USERS[login_id]["name"]
+                st.success("Login successful")
+                st.rerun()
+            else:
+                st.error("Invalid ID or password")
+
+      
+
+    st.stop()
+
+
+# -------------------- DATA LOAD --------------------
 
 leave_df_all = pd.DataFrame(get_leave_data())
 
@@ -368,9 +342,64 @@ if not leave_df_all.empty and "leave_type" in leave_df_all.columns:
 else:
     leave_df = leave_df_all
     wfh_df = pd.DataFrame()
+
 employee_df = pd.DataFrame(get_employee_data())
 employee_df = add_gender_if_missing(employee_df)
 
+
+# -------------------- SIDEBAR --------------------
+
+st.sidebar.markdown('<div class="sidebar-title">📅 Leave Management Portal</div>', unsafe_allow_html=True)
+st.sidebar.markdown(
+    f'<div class="sidebar-subtitle">Logged in as: {st.session_state.role}</div>',
+    unsafe_allow_html=True
+)
+
+if st.session_state.role == "Employee":
+    menu_options = [
+        "📝 Apply Leave",
+        "📄 Leave History"
+    ]
+
+elif st.session_state.role == "Manager":
+    menu_options = [
+        "🏠 Employee Dashboard",
+        "✅ Manager Approval Dashboard",
+        "📊 Leave Statistics",
+        "📄 Leave History"
+    ]
+
+else:
+    menu_options = [
+        "🏠 Employee Dashboard",
+        "📝 Apply Leave",
+        "✅ Manager Approval Dashboard",
+        "👥 Employee Directory",
+        "📊 Leave Statistics",
+        "📄 Leave History"
+    ]
+
+menu = st.sidebar.radio("MAIN MENU", menu_options)
+
+if st.sidebar.button("Logout"):
+    st.session_state.logged_in = False
+    st.session_state.user_id = ""
+    st.session_state.role = ""
+    st.session_state.name = ""
+    st.rerun()
+
+
+page_title = menu.split(" ", 1)[1]
+
+st.markdown(f"""
+<div class="topbar">
+    <div class="page-title">{page_title}</div>
+    <div class="page-subtitle">Welcome, {st.session_state.name} | Role: {st.session_state.role}</div>
+</div>
+""", unsafe_allow_html=True)
+
+
+# -------------------- EMPLOYEE DASHBOARD --------------------
 
 if menu == "🏠 Employee Dashboard":
     total_employees = len(employee_df)
@@ -405,13 +434,7 @@ if menu == "🏠 Employee Dashboard":
         with c1:
             st.markdown('<div class="card"><div class="card-title">Gender Distribution</div>', unsafe_allow_html=True)
             gender_count = employee_df.groupby("gender").size().reset_index(name="employees")
-            fig = px.pie(
-                gender_count,
-                names="gender",
-                values="employees",
-                hole=0.45,
-                title="Employee Gender Split"
-            )
+            fig = px.pie(gender_count, names="gender", values="employees", hole=0.45, title="Employee Gender Split")
             st.plotly_chart(clean_pie(fig), use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -449,6 +472,8 @@ if menu == "🏠 Employee Dashboard":
         st.info("No employee data available.")
 
 
+# -------------------- APPLY LEAVE --------------------
+
 elif menu == "📝 Apply Leave":
     st.markdown('<div class="card"><div class="card-title">Submit Leave Application</div>', unsafe_allow_html=True)
 
@@ -458,8 +483,18 @@ elif menu == "📝 Apply Leave":
         employee_df["display_name"] = employee_df["employee_id"] + " - " + employee_df["name"]
 
         with st.form("leave_form"):
-            selected_employee = st.selectbox("Select Employee *", employee_df["display_name"].tolist())
-            selected_row = employee_df[employee_df["display_name"] == selected_employee].iloc[0]
+            if st.session_state.role == "Employee":
+                own_employee = employee_df[employee_df["employee_id"] == st.session_state.user_id]
+
+                if not own_employee.empty:
+                    selected_row = own_employee.iloc[0]
+                    st.info("Employee login detected. Leave will be applied only for your employee ID.")
+                else:
+                    selected_row = employee_df.iloc[0]
+                    st.warning("Demo employee ID not found in employee table. Using first employee record.")
+            else:
+                selected_employee = st.selectbox("Select Employee *", employee_df["display_name"].tolist())
+                selected_row = employee_df[employee_df["display_name"] == selected_employee].iloc[0]
 
             col1, col2 = st.columns(2)
 
@@ -509,6 +544,8 @@ elif menu == "📝 Apply Leave":
 
     st.markdown('</div>', unsafe_allow_html=True)
 
+
+# -------------------- MANAGER APPROVAL --------------------
 
 elif menu == "✅ Manager Approval Dashboard":
     if leave_df.empty:
@@ -560,6 +597,8 @@ elif menu == "✅ Manager Approval Dashboard":
                 st.error("Leave rejected.")
                 st.rerun()
 
+
+# -------------------- EMPLOYEE DIRECTORY --------------------
 
 elif menu == "👥 Employee Directory":
     st.markdown('<div class="card"><div class="card-title">Employee Directory</div>', unsafe_allow_html=True)
@@ -628,6 +667,8 @@ elif menu == "👥 Employee Directory":
     st.markdown('</div>', unsafe_allow_html=True)
 
 
+# -------------------- LEAVE STATISTICS --------------------
+
 elif menu == "📊 Leave Statistics":
     st.markdown('<div class="card"><div class="card-title">Leave Analytics Dashboard</div>', unsafe_allow_html=True)
 
@@ -680,26 +721,38 @@ elif menu == "📊 Leave Statistics":
     st.markdown('</div>', unsafe_allow_html=True)
 
 
+# -------------------- LEAVE HISTORY --------------------
+
 elif menu == "📄 Leave History":
     st.markdown('<div class="card"><div class="card-title">Leave History</div>', unsafe_allow_html=True)
 
     if not leave_df.empty:
-        clean_df = leave_df.rename(columns={
-            "employee_id": "Employee Number",
-            "employee_name": "Employee Name",
-            "leave_type": "Leave Type",
-            "start_date": "Start Date",
-            "end_date": "End Date",
-            "total_days": "Total Days",
-            "reason": "Reason",
-            "status": "Status"
-        })
+        display_leave_df = leave_df.copy()
 
-        st.dataframe(
-            clean_df[["Employee Number", "Employee Name", "Leave Type", "Start Date", "End Date", "Total Days", "Reason", "Status"]],
-            use_container_width=True,
-            hide_index=True
-        )
+        if st.session_state.role == "Employee":
+            display_leave_df = display_leave_df[
+                display_leave_df["employee_id"] == st.session_state.user_id
+            ]
+
+        if not display_leave_df.empty:
+            clean_df = display_leave_df.rename(columns={
+                "employee_id": "Employee Number",
+                "employee_name": "Employee Name",
+                "leave_type": "Leave Type",
+                "start_date": "Start Date",
+                "end_date": "End Date",
+                "total_days": "Total Days",
+                "reason": "Reason",
+                "status": "Status"
+            })
+
+            st.dataframe(
+                clean_df[["Employee Number", "Employee Name", "Leave Type", "Start Date", "End Date", "Total Days", "Reason", "Status"]],
+                use_container_width=True,
+                hide_index=True
+            )
+        else:
+            st.info("No leave history found for this employee.")
     else:
         st.info("No leave history found.")
 
